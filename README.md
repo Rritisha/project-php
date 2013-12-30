@@ -94,35 +94,6 @@ foreach($temp['feed']['entry'] as $cnt) {
 	if(isset($cnt['gd$structuredPostalAddress']['0']['gd$city'])) echo " --- " . $cnt['gd$structuredPostalAddress']['0']['gd$city']['$t'];
 	echo "</br>";
 }
-//echo "<h3>Email Addresses:</h3>";
-//$xml =  new SimpleXMLElement($xmlresponse);
-/*$url = 'http://www.google.com/m8/feeds/contacts/default/full?max-results='.$max_results.'&oauth_token='.$accesstoken;
-$xmlresponse =  curl_file_get_contents($url);
-//print_r($xmlresponse);
-if((strlen(stristr($xmlresponse,'Authorization required'))>0) && (strlen(stristr($xmlresponse,'Error '))>0))
-{
-    echo "<h2>OOPS !! Something went wrong. Please try reloading the page.</h2>";
-    exit();
-}
-echo "<h3>Email Addresses:</h3>";
-$xml =  new SimpleXMLElement($xmlresponse);
-/*function getData() {
-//
- //   set_error_handler(function($errno, $errstr, $errfile, $errline) {
-   //     throw new Exception($errstr, $errno);
-    //});
-
-    //try {
-      //  $xml = new SimpleXMLElement($xmlresponse);
-    //}catch(Exception $e) {
-        //restore_error_handler();
-      //  throw $e;
-    }
-
-    return $xml;
-}
-
-$xml = getData();*/
 
 ?>
 </body>
